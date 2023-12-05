@@ -1,7 +1,7 @@
 import mediapipe as mp
 import cv2
 import gaze
-
+from picamera2 import Picamera2
 mp_face_mesh = mp.solutions.face_mesh  # initialize the face mesh model
 
 
