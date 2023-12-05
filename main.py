@@ -6,7 +6,7 @@ mp_face_mesh = mp.solutions.face_mesh  # initialize the face mesh model
 
 
 # camera stream:
-cap = cv2.VideoCapture(-1)  # chose camera index (try 1, 2, 3)
+cap = cv2.VideoCapture(0, cv2.CAP_V4L2)  # chose camera index (try 1, 2, 3)
 with mp_face_mesh.FaceMesh(
         max_num_faces=1,  # number of faces to track in each frame
         refine_landmarks=True,  # includes iris landmarks in the face mesh model
